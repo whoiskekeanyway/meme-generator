@@ -1,0 +1,207 @@
+.main-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo-image {
+  width: 60px;
+}
+
+.navigation {
+  display: flex;
+  background-color: #4053bd;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.nav-title {
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  place-content: center;
+  margin-top: 3rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form input {
+  width: 200px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #4053bd;
+  border-radius: 4px;
+
+}
+
+
+input[type="text"]:focus {
+  background-color: lightblue;
+  border: 3px solid #4053bd;
+}
+
+.form--button {
+  min-width: 130px;
+  height: 40px;
+  color: rgb(233, 213, 213);
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  background: #4053bd;
+  box-shadow: 0 5px #212529;
+  margin-top: 10px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.meme-image {
+  width: 30px;
+  margin-left: 10px;
+  position: relative;
+  top: 10px;
+}
+.form--button:hover {
+  box-shadow: 0 3px #212529;
+  top: 1px;
+}
+.form--button:active {
+  box-shadow: 0 0 #212529;
+  top: 5px;
+}
+
+.meme {
+  position: relative;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.meme--image {
+  max-width: 60%;
+  border-radius: 3px;
+  max-height: 800px;
+}
+
+.meme--text {
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 15px 0;
+  padding: 0 5px;
+  font-family: impact, sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000,
+    -2px 2px 0 #000, 0 2px 0 #000, 2px 0 0 #000, 0 -2px 0 #000, -2px 0 0 #000,
+    2px 2px 5px #000;
+}
+
+.bottom {
+  bottom: 0;
+}
+
+.top {
+  top: 0;
+}
+
+.container {
+  max-width: 800px !important;
+  margin: 0 auto;
+}
+
+/* Footer */
+
+footer {
+  font-weight: 400;
+  padding: 10px;
+  text-align: center;
+  width: 1400px;
+  margin: 0 auto;
+  font-weight: 400;
+  font-size: 1.5rem;
+  position: fixed;
+}
+
+.footerDiv {
+  padding: 5px;
+  text-align: center;
+}
+.copyright a {
+  text-decoration: none;
+  color: steelblue;
+  position: relative;
+}
+
+.designerp {
+  text-decoration: none;
+  color: steelblue;
+  position: relative;
+}
+
+.copyright a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: steelblue;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 250ms ease-in;
+}
+
+.copyright a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.designerp::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: steelblue;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 250ms ease-in;
+}
+
+.designerp:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+@media screen and (max-width: 767px) {
+  footer {
+    width: 100%;
+  }
+}
